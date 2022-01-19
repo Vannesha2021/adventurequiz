@@ -17,3 +17,50 @@ body {
   text-align: center;
   margin-top: 0%;
   }
+
+  #question {
+    background-color: black;
+    color: white;
+    font-family : 'Be Vietnam Pro', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 22px;
+    margin-top : 50px;
+    margin-bottom : 30px;
+    }
+
+  #answer {
+    background-color: black;
+    font-family : 'Be Vietnam Pro', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 23px;
+    margin-top : 50px;
+    display: grid;
+    grid-row-gap:5px
+  }
+
+  #answer input[type=radio] { display: none; }
+#answer label {
+  background: #fafafa;
+  border-radius: 20px;
+  padding: 10px;
+  font-size: 20px;
+  text-align: center;
+  cursor: pointer;
+}
+
+#answer label:hover {
+    background: yellow;
+}
+  
+#answer label.correct {
+    background: rgb(94, 131, 20);
+    border: 1px ;
+}
+#answer label.wrong {
+    background: red;
+    border: 1px ;
+}
