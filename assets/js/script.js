@@ -148,10 +148,26 @@ select: (answer) => {
       quiz.score++;
       answer.classList.add("correct");
       alert("That's correct!");
-      
   } else {
       answer.classList.add("wrong");
       alert("Oh NO!");
+  }
+  quiz.now++;
+  setTimeout(() => {
+  if (quiz.now < quiz.quiz.length) {quiz.draw(); }
+  else {
+    quiz.question.innerHTML = `Out of ${quiz.quiz.length} you answered ${quiz.score} correctly.`;
+    quiz.answer.innerHTML = "";
+  }
+}, 20);
+
+},
+};
+window.addEventListener("load", quiz.init);
+
+
+
+
 
 
 
