@@ -100,7 +100,6 @@ let quiz = {
 quizHeart : null,
 question : null, 
 answer : null,
-nextButton : null,
 //Score
 now : 0,
 score : 0, 
@@ -116,5 +115,25 @@ quiz.answer = document.createElement("div");
 quiz.answer.id = "answer";
 quiz.quizHeart.appendChild(quiz.answer);
 
+// start quiz
 quiz.draw();
+},
+
+draw: () => {
+  quiz.question.innerHTML = quiz.quiz[quiz.now].question;
+
+  quiz.answer.innerHTML = "";
+  for (let i in quiz.quiz[quiz.now].answer) {
+      let radio = document.createElement("input");
+      radio.type = "radio";
+      radio.name = "quiz";
+      radio.id = "quizanswer" + i;
+      quiz.answer.appendChild(radio);
+      let label = document.createElement("label");
+      label.innerHTML = quiz.quiz[quiz.now].answer[i];
+      label.setAttribute("for", "quizanswer" + i);
+      label.dataset.idx = i;
+      label.addEventListener("click", () => { quiz.select(label); });
+      quiz.answer.appendChild(label);
+  }
 },
