@@ -135,5 +135,23 @@ draw: () => {
       label.dataset.idx = i;
       label.addEventListener("click", () => { quiz.select(label); });
       quiz.answer.appendChild(label);
+
   }
 },
+select: (answer) => {
+  let questions = quiz.answer.getElementsByTagName("label");
+  for (let label of questions) {
+      label.removeEventListener("click", quiz.select);
+    }
+    let correct = answer.dataset.idx == quiz.quiz[quiz.now].correct;
+    if (correct) {
+      quiz.score++;
+      answer.classList.add("correct");
+      alert("That's correct!");
+      
+  } else {
+      answer.classList.add("wrong");
+      alert("Oh NO!");
+
+
+
