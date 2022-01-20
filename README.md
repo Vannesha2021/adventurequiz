@@ -1,108 +1,165 @@
-![CI logo](https://codeinstitute.s3.amazonaws.com/fullstack/ci_logo_small.png)
+<h1>Adventure Quiz</h1>
 
-Welcome Vannesha,
+View the live project here: [Adventure Quiz](https://vannesha2021.github.io/adventurequiz/)
 
-This is the Code Institute student template for Gitpod. We have preinstalled all of the tools you need to get started. It's perfectly ok to use this template as the basis for your project submissions.
 
-You can safely delete this README.md file, or change it for your own project. Please do read it at least once, though! It contains some important information about Gitpod and the extensions we use. Some of this information has been updated since the video content was created. The last update to this file was: **September 1, 2021**
+![this is an image](assets/css/readme.images/responsive.JPG)
 
-## Gitpod Reminders
 
-To run a frontend (HTML, CSS, Javascript only) application in Gitpod, in the terminal, type:
+<h2>Introduction</h2>
+With this World Quiz, users can test themselves on their global geographic knowledge. Users are asked 10 quiz questions, and are  able to select an answer from a multiple-choice list. When a user completes the quiz, they are informed of their score.
 
-`python3 -m http.server`
 
-A blue button should appear to click: _Make Public_,
+<h2>Built with</h2>
 
-Another blue button should appear to click: _Open Browser_.
+- JavaScipt
 
-To run a backend Python file, type `python3 app.py`, if your Python file is named `app.py` of course.
+- HTML
 
-A blue button should appear to click: _Make Public_,
+- CSS
 
-Another blue button should appear to click: _Open Browser_.
 
-In Gitpod you have superuser security privileges by default. Therefore you do not need to use the `sudo` (superuser do) command in the bash terminal in any of the lessons.
+<h2>Timeline</h2>
 
-To log into the Heroku toolbelt CLI:
+- This project began with generating the concept of the world geography quiz, and the structure thereof - i.e. multiple-choice answers, ability to provide a final score, and immediate per-question feedback. Once the structure was conceived and question/answer sets had been drafted, I then proceded to create the wireframes to assist in the efficient development of the quiz. The links to the wireframes are provided below:
+- The image below is the wireframe which was used to design the quiz.
 
-1. Log in to your Heroku account and go to *Account Settings* in the menu under your avatar.
-2. Scroll down to the *API Key* and click *Reveal*
-3. Copy the key
-4. In Gitpod, from the terminal, run `heroku_config`
-5. Paste in your API key when asked
 
-You can now use the `heroku` CLI program - try running `heroku apps` to confirm it works. This API key is unique and private to you so do not share it. If you accidentally make it public then you can create a new one with _Regenerate API Key_.
+![this is an image](assets/css/readme.images/timeline.JPG)
 
-------
 
-## Release History
+<h2>User Experience (UX)</h2>
+Upon arriving, the quiz page is engaging and quickly understandable. Users are encouraged to engage with the quiz as the first question is shown immediately, thus removing any friction to the user commencing the quiz. The quiz fonts are chosen for their readability, and questions are highlighted as they are hovered over. Users receive immediate feedback post-selection if they have been successful or otherwise upon answering each question. At the conclusion of the quiz, users are provided with their final score so that they are left encouraged to try again if they have not been fully succcessful this visit. 
 
-We continually tweak and adjust this template to help give you the best experience. Here is the version history:
 
-**September 1 2021:** Remove `PGHOSTADDR` environment variable.
+<h2>Design</h2>
 
-**July 19 2021:** Remove `font_fix` script now that the terminal font issue is fixed.
+- Colour Scheme
 
-**July 2 2021:** Remove extensions that are not available in Open VSX.
+The colour scheme selected for this quiz was specifically chosen for readability and so as to reduce the possibility of distraction, and enhance user focus while users are engaging with the quiz. 
 
-**June 30 2021:** Combined the P4 and P5 templates into one file, added the uptime script. See the FAQ at the end of this file.
 
-**June 10 2021:** Added: `font_fix` script and alias to fix the Terminal font issue
+- Typography
 
-**May 10 2021:** Added `heroku_config` script to allow Heroku API key to be stored as an environment variable.
+Vujahday Script was chosen for text within the H1 and H2 tags to give a relaxed, engaging look to the quiz. Meanwhile, Be Vietnam Pro was used for the quiz questions and answers, in order to ensure readability and clarity.
 
-**April 7 2021:** Upgraded the template for VS Code instead of Theia.
 
-**October 21 2020:** Versions of the HTMLHint, Prettier, Bootstrap4 CDN and Auto Close extensions updated. The Python extension needs to stay the same version for now.
+- Imagery
 
-**October 08 2020:** Additional large Gitpod files (`core.mongo*` and `core.python*`) are now hidden in the Explorer, and have been added to the `.gitignore` by default.
+No imagery exists within the quiz.
 
-**September 22 2020:** Gitpod occasionally creates large `core.Microsoft` files. These are now hidden in the Explorer. A `.gitignore` file has been created to make sure these files will not be committed, along with other common files.
+<h2>Features</h2>
 
-**April 16 2020:** The template now automatically installs MySQL instead of relying on the Gitpod MySQL image. The message about a Python linter not being installed has been dealt with, and the set-up files are now hidden in the Gitpod file explorer.
+Responsive to all device sizes.
 
-**April 13 2020:** Added the _Prettier_ code beautifier extension instead of the code formatter built-in to Gitpod.
+Engaging elements.
 
-**February 2020:** The initialisation files now _do not_ auto-delete. They will remain in your project. You can safely ignore them. They just make sure that your workspace is configured correctly each time you open it. It will also prevent the Gitpod configuration popup from appearing.
+Calculates final score for users.
 
-**December 2019:** Added Eventyret's Bootstrap 4 extension. Type `!bscdn` in a HTML file to add the Bootstrap boilerplate. Check out the <a href="https://github.com/Eventyret/vscode-bcdn" target="_blank">README.md file at the official repo</a> for more options.
 
-------
+<h2>Technologies Used</h2>
 
-## FAQ about the uptime script
+- JavaScript
 
-**Why have you added this script?**
+- HTML5
 
-It will help us to calculate how many running workspaces there are at any one time, which greatly helps us with cost and capacity planning. It will help us decide on the future direction of our cloud-based IDE strategy.
+- CSS 3
 
-**How will this affect me?**
+- GitPod
 
-For everyday usage of Gitpod, it doesn’t have any effect at all. The script only captures the following data:
+<h2>Frameworks, Libraries and Programs Used</h2>
 
-- An ID that is randomly generated each time the workspace is started.
-- The current date and time
-- The workspace status of “started” or “running”, which is sent every 5 minutes.
+- Hover.css
 
-It is not possible for us or anyone else to trace the random ID back to an individual, and no personal data is being captured. It will not slow down the workspace or affect your work.
+Hover CSS was used on when in question selection to provide further confirmation on the users selection of answers.
 
-**So….?**
 
-We want to tell you this so that we are being completely transparent about the data we collect and what we do with it.
+- Google Fonts
 
-**Can I opt out?**
+Google fonts were used to import the Vujahday Script and the Be Vietnam Pro which was used throughout the project.
 
-Yes, you can. Since no personally identifiable information is being captured, we'd appreciate it if you let the script run; however if you are unhappy with the idea, simply run the following commands from the terminal window after creating the workspace, and this will remove the uptime script:
+- Git
 
-```
-pkill uptime.sh
-rm .vscode/uptime.sh
-```
+GIT was used for version control and utilising the Gitpod terminal to commit to Git and push to Github.
 
-**Anything more?**
+- GitHub
 
-Yes! We'd strongly encourage you to look at the source code of the `uptime.sh` file so that you know what it's doing. As future software developers, it will be great practice to see how these shell scripts work.
+Github is used to store the projects code after being pushed from Git.
 
----
 
-Happy coding!
+- Lucidchart
+
+Lucidchart was used to create my wireframes at the start of the project.
+
+- Slack Channel
+
+Slack was used to communicate with other coders, and tutors to resolve issues which I was facing with the project.
+
+
+<h2>Testings</h2>
+The W3C Markup Validator and W3C CSS Validator Services were used to validate every page of the project to ensure there were no syntax errors in the project.
+
+[W3C Markup Validator- HTML](https://validator.w3.org/) - [Results](https://validator.w3.org/nu/?doc=https%3A%2F%2Fvannesha2021.github.io%2Fadventurequiz%2Findex.html)
+
+[W3C Markup Validator - CSS](https://validator.w3.org/) - [Results](https://jigsaw.w3.org/css-validator/validator?uri=https%3A%2F%2Fvannesha2021.github.io%2Fadventurequiz%2Fassets%2Fcss%2Fstyle.css
+)
+
+[jshint Validator - JavaScipt](https://jshint.com/)
+
+Image result is shown below :
+
+![this is an image](assets/css/readme.images/js.validatorResults.JPG)
+
+In addition to that, I was also usIng the console to ensure that there were no errors in the whole duration of the project.
+
+
+<h2>Accessibility</h2>
+
+
+Scored a minimum of 87%
+![this is an image](assets/css/readme.images/accessibility.JPG)
+
+<h2>Bugs</h2>
+There were no known bugs at the time of final deployment.
+
+
+
+<h2>Issues Faced during the project</h2>
+
+- Difficulty in getting understanding JavaScipt in a short period of time.
+
+- Trying to make the score addition work at the end of the quiz.
+
+- My initial idea was to create multiple quiz in one page but due to time constraint, the page consist of 1 quiz.
+
+<h2>Credits and references</h2>
+
+- Traversy Media from YouTube
+- DaveHorrocks_5P from Slack assisted me with codes for this project.
+- code-boxx.com
+- Web Dev Simplified
+- w3schools
+
+<h2>Deployment</h2>
+The project has been developed using Gitpod and GitHub. The project was regularly commited to GitHub during the initial development phase.
+
+The site was deployed to GitHub pages.
+
+The steps to deploy are as follows:
+In the GitHub repository, navigate to the Settings tab.
+On the left menu list, select Pages.
+In the source section drop-down menu, select the Main Branch and click Save.
+Upon successful save, the Github Pages section will display a message to indicate that the site is ready to be published at https://vannesha2021.github.io/adventurequiz/.
+
+<h2>Project walkthrough</h2>
+
+
+- Quiz question page
+
+- Answer feedback browser popup
+
+- Result page
+
+<h2>Contact details</h2>
+
+* Vannesha Andrew - vannesha90@gmail.com

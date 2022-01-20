@@ -1,5 +1,7 @@
+/*jshint esversion: 6 */
+
 let quiz = {
-    quiz : [ 
+    quiz : [
       {
         question : "Which canal separates the African continent from Asia?",
         answer : [
@@ -8,13 +10,13 @@ let quiz = {
           "Danube-Black Sea Canal",
           "Suez Canal"
         ],
-        correct : 3 
+        correct : 3
       },
       {
           question : "Which continent is Kazakhstan located at?",
           answer : [
           "Europe",
-          "Africa",       
+          "Africa",
           "Asia",
           "South America"
         ],
@@ -98,18 +100,18 @@ let quiz = {
       ],
 
 quizHeart : null,
-question : null, 
+question : null,
 answer : null,
 //Score
 now : 0,
-score : 0, 
+score : 0,
 
 init: () => {
-    quiz.quizHeart = document.getElementById("questionContainer")
+    quiz.quizHeart = document.getElementById("questionContainer");
 
 quiz.question = document.createElement("div");
 quiz.question.id = "question";
-quiz.quizHeart.appendChild(quiz.question);      
+quiz.quizHeart.appendChild(quiz.question);
 
 quiz.answer = document.createElement("div");
 quiz.answer.id = "answer";
@@ -156,7 +158,7 @@ select: (answer) => {
   setTimeout(() => {
   if (quiz.now < quiz.quiz.length) {quiz.draw(); }
   else {
-    quiz.question.innerHTML = `Out of ${quiz.quiz.length} you answered ${quiz.score} correctly.`;
+    quiz.question.innerHTML = `Out of ${quiz.quiz.length}, you answered ${quiz.score} correctly.`;
     quiz.answer.innerHTML = "";
   }
 }, 20);
